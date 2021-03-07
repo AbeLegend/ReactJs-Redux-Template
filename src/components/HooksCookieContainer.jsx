@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { buyCookie } from "../redux";
 
 const HooksCookieContainer = () => {
-  const numOfCookies = useSelector((state) => state.numOfCookies);
+  const numOfCookies = useSelector((state) => state.cookie.numOfCookies);
   const dispatch = useDispatch();
   return (
     <div>

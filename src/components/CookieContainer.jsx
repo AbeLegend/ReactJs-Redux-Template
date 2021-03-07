@@ -13,8 +13,7 @@ const CookieContainer = (props) => {
 
 const mapStateToProps = (state) => {
   return {
-    numOfCookies: state.numOfCookies,
-    coba: "hai",
+    numOfCookies: state.cookie.numOfCookies,
   };
 };
 

@@ -1,6 +1,6 @@
 import { createStore } from 'redux'
-import cookieReducer from './cookie/cookieReducers'
+import rootReducer from './rootReducer'
 
-const store = createStore(cookieReducer)
+const store = createStore(rootReducer)
 
 export default store
