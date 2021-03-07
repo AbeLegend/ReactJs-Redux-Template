@@ -1,7 +1,8 @@
 import { BUY_COOKIE } from './cookieTypes';
 
-export const buyCookie = () => {
+export const buyCookie = (number = 1) => {
   return {
-    type: BUY_COOKIE
+    type: BUY_COOKIE,
+    payload: number
   }
 }
