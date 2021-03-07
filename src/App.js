@@ -1,16 +1,17 @@
 import React from 'react';
 import { Provider } from 'react-redux';
 import store from './redux/store';
-import CookieContainer from "./components/CookieContainer";
-import HooksCookieContainer from './components/HooksCookieContainer';
-import PuddingContainer from './components/PuddingContainer';
-import NewCookieContainer from './components/NewCookieContainer';
-import ItemContainer from './components/ItemContainer';
+// import CookieContainer from "./components/CookieContainer";
+// import HooksCookieContainer from './components/HooksCookieContainer';
+// import PuddingContainer from './components/PuddingContainer';
+// import NewCookieContainer from './components/NewCookieContainer';
+// import ItemContainer from './components/ItemContainer';
+import UserContainer from './components/UserContainer';
 
 function App() {
   return (
     <Provider store={store}>
-      <div style={{ display: 'flex', justifyContent: 'center', textAlign: 'center' }}>
+      {/* <div style={{ display: 'flex', justifyContent: 'center', textAlign: 'center' }}>
         <ItemContainer cookie />
       </div>
       <div style={{ display: 'flex', justifyContent: 'center', textAlign: 'center' }}>
@@ -27,8 +28,11 @@ function App() {
       </div>
       <div style={{ display: 'flex', justifyContent: 'center', textAlign: 'center' }}>
         <PuddingContainer />
+      </div> */}
+      <div style={{ justifyContent: 'center', textAlign: 'center' }}>
+        <UserContainer />
       </div>
-    </Provider>
+    </Provider >
   );
 }
 
